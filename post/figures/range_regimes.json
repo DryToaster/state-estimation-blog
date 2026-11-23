@@ -1,0 +1,9 @@
+{
+  "script": "demos/fig_concepts.py",
+  "command": "python fig_concepts.py",
+  "data": "analytic",
+  "runtime_s": 0.02,
+  "output": "post/figures/range_regimes.png",
+  "git_commit": "7133d32",
+  "created": "2026-11-17 16:53:42"
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$pagetitle$</title>
+$if(description)$<meta name="description" content="$description$">$endif$
+<meta property="og:title" content="$pagetitle$">
+$if(description)$<meta property="og:description" content="$description$">$endif$
+<link rel="stylesheet" href="style.css">
+<script>
+  window.MathJax = { tex: { tags: "none" }, chtml: { displayOverflow: "scroll" }, options: { enableMenu: false } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml-full.js"></script>
+</head>
+<body>
+<header class="masthead">
+  $if(draft)$<p class="draft">Draft: not yet published</p>$endif$
+  <h1 class="title">$title$</h1>
+  $if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+  <p class="meta">$if(date)$<time>$date$</time>$endif$$if(tags)$ · $for(tags)$<span class="tag">$tags$</span>$sep$ $endfor$$endif$</p>
+</header>
+$if(toc)$
+<nav class="toc" aria-label="Contents">
+  <details open>
+    <summary>Contents</summary>
+    $table-of-contents$
+  </details>
+</nav>
+$endif$
+<main>
+$body$
+</main>
+<footer>
+  <p>Figures and videos are rendered offline from the <a href="https://github.com/DryToaster/state-estimation-blog/tree/main/demos">demos</a>; each figure has a JSON sidecar with the exact command that produced it.</p>
+</footer>
+</body>
+</html>

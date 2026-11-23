@@ -1,0 +1,21 @@
+# Environment for the demos in demos/. Create with:
+#   conda env create -f environment.yml && conda activate event-drones
+# Pin exact versions (conda env export --from-history) once the demos are final.
+name: event-drones
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - numba>=0.59        # EVT3 decoding, per-pixel period histograms
+  - scipy>=1.11        # Brent optimisation (EventPro CMax), signal processing
+  - scikit-learn>=1.4  # K-means rotor segmentation, SVM
+  - pandas>=2.1
+  - matplotlib>=3.8
+  - opencv>=4.9        # frame rendering / overlays
+  - ffmpeg>=6          # video encoding (libx264)
+  - h5py
+  - hdf5=1.14         # FRED's HDF5 events need Prophesee's ECF plugin, which breaks on HDF5 2.x
+  - pandoc=3.14       # site build (site/build.sh); CI pins the same version
+  - tqdm
+  - pip

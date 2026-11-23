@@ -1,0 +1,9 @@
+{
+  "script": "demos/fig_rotor_speeds.py",
+  "command": "python fig_rotor_speeds.py --seq 188 --t0 30 --t1 50",
+  "data": "FRED seq 188",
+  "runtime_s": 0.1,
+  "output": "post/figures/rotor_speeds_188.png",
+  "git_commit": "7133d32",
+  "created": "2026-11-17 17:06:26"
+}

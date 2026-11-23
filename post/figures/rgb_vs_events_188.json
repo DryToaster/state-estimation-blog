@@ -1,0 +1,10 @@
+{
+  "script": "demos/fig_fred_frames.py",
+  "command": "python fig_fred_frames.py --seq 188 --t 40.800 --window-ms 10",
+  "data": "FRED seq 188",
+  "t": 40.8,
+  "runtime_s": 23.3,
+  "output": "post/figures/rgb_vs_events_188.png",
+  "git_commit": "7133d32",
+  "created": "2026-11-17 16:54:07"
+}

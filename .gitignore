@@ -1,0 +1,15 @@
+# source papers: link to arXiv instead of redistributing
+*.pdf
+# local data / caches / generated heavy media
+cache/
+data/
+*.npz
+*.raw
+# compressed clips in post/media/ ARE committed (no LFS: Pages can't serve it)
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# built site (CI builds it; ./site/build.sh to preview)
+_site/
+review/

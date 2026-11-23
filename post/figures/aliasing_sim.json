@@ -1,0 +1,9 @@
+{
+  "script": "demos/fig_concepts.py",
+  "command": "python fig_concepts.py",
+  "data": "simulated",
+  "runtime_s": 0.13,
+  "output": "post/figures/aliasing_sim.png",
+  "git_commit": "7133d32",
+  "created": "2026-11-17 16:53:42"
+}

@@ -1,0 +1,10 @@
+{
+  "script": "demos/fig_rotor_spectrum.py",
+  "command": "python fig_rotor_spectrum.py --seq 188 --t 40.800 --window-ms 200",
+  "data": "FRED seq 188",
+  "f0_hz": 510.0,
+  "runtime_s": 21.1,
+  "output": "post/figures/rotor_spectrum_188.png",
+  "git_commit": "7133d32",
+  "created": "2026-11-17 16:55:37"
+}
